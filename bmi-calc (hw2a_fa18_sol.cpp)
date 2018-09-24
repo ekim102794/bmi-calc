@@ -1,0 +1,33 @@
+// Kim, Erik
+// CS111 11D Homework 2
+#include <iostream>
+using namespace std;
+int main(){
+    double height;
+    double weight;
+    double bmi;
+    cout << "Body Mass Index Program" << endl;
+    cout << "What is your height measured in inches? ";
+    cin >> height;
+    if (height < 10){
+        cout << "Input for height must be 10 inches or more. Terminating program.";
+        return 0;
+    }
+    cout << "What is your weight measured in pounds? ";
+    cin >> weight;
+    while (weight <= 0){
+        cout << "Please enter a weight greater than 0 lb: ";
+        cin >> weight;
+    }
+    bmi = (weight*703.0)/(height*height);
+    if (bmi<=18.5){
+        cout << "Your BMI is " << bmi << " and is considered underweight.";
+    }
+    else if (18.5<=bmi && bmi<=25){
+        cout << "Your BMI is " << bmi << " and is considered normal.";
+    }
+    else if (bmi>=25){
+        cout << "Your BMI is " << bmi << " and is considered overweight.";
+    }
+    return 0;
+}
