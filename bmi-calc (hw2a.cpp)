@@ -20,7 +20,7 @@ int main(){
         cin >> weight;
     }
     bmi = (weight*703.0)/(height*height);
-    if (bmi<=18.5){
+    if (bmi <= 18.5){
         cout << "Your BMI is " << bmi << " and is considered underweight.";
     }
     else if (18.5<=bmi && bmi<=25){
