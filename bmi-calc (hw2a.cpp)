@@ -23,10 +23,10 @@ int main(){
     if (bmi <= 18.5){
         cout << "Your BMI is " << bmi << " and is considered underweight.";
     }
-    else if (18.5<=bmi && bmi<=25){
+    else if (18.5 <= bmi && bmi <= 25){
         cout << "Your BMI is " << bmi << " and is considered normal.";
     }
-    else if (bmi>=25){
+    else if (bmi >= 25){
         cout << "Your BMI is " << bmi << " and is considered overweight.";
     }
     return 0;
